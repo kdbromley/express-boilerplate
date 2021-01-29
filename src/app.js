@@ -14,4 +14,8 @@ app.use(morgan(morganSetting));
 app.use(helmet());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Hello, boilerplate!')
+});
+
 module.exports = app;
